@@ -31,6 +31,7 @@ public abstract class GameController {
 	}
 	
 	private void parameterAuswerten(String args[]){
+		System.out.println("Test");
 		Options opts = new Options();
 		opts.addOption(new Option("h","help",false,"Ausgabe der Hilfe"));
 		opts.addOption(new Option("d","debug", false, "Debug modus setzen"));
