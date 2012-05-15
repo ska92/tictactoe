@@ -12,7 +12,7 @@ import Game.Spieler.Spieler;
 import Game.Utils.Position;
 
 public abstract class GameController {
-	
+	//sebastian
 	protected Model model;
 	protected Viewer viewer;
 	protected IRegeln regeln;
