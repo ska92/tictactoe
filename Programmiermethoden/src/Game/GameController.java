@@ -10,6 +10,7 @@ import org.apache.commons.cli.PosixParser;
 import Game.Regeln.IRegeln;
 import Game.Spieler.Spieler;
 import Game.Utils.Position;
+import HSSF.Write;
 
 public abstract class GameController {
 	
@@ -26,6 +27,11 @@ public abstract class GameController {
 		this.regeln = regeln;
 		this.model = gameModel;
 		this.viewer = viewer;
+		Write w = new Write("test.xls");
+		w.createnewRow(0);
+		w.createnewCell(0, "lol");
+		w.writeout();
+		
 		
 		model.addObserver(viewer);
 	}
