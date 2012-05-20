@@ -5,7 +5,7 @@ import Game.Spieler.Spieler;
 import Game.Spielfelder.ISpielfeld;
 import Game.Utils.Position;
 
-public class TicTacToe4x4Regeln implements IRegeln{
+public class VierGewinntRegeln implements IRegeln{
 
 	@Override
 	public boolean unentschieden(ISpielfeld sp) {
