@@ -1,9 +1,9 @@
 package Game;
 
-import java.util.Observer;
+import Game.Utils.IObserver;
 
 
-public abstract class Viewer implements Observer{
+public abstract class Viewer implements IObserver{
 	
 	public abstract void ausgabe(Object ausgabeObjekt);
 	

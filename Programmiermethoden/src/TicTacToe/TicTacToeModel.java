@@ -6,6 +6,12 @@ import Game.Spielfelder.ISpielfeld;
 
 public class TicTacToeModel extends Model{
 
+	
+	/**
+	 * @param spieler1
+	 * @param spieler2
+	 * @param spielfeld
+	 */
 	public TicTacToeModel(Spieler spieler1, Spieler spieler2,
 			ISpielfeld spielfeld) {
 		super(spieler1, spieler2, spielfeld);
