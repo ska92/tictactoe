@@ -27,9 +27,9 @@ public abstract class GameController {
 		this.regeln = regeln;
 		this.model = gameModel;
 		this.viewer = viewer;
-		Write w = new Write("test.xls");
-		w.createnewRow(0);
-		w.createnewCell(0, "lol");
+		Write w = new Write("test1.xls");
+		//w.createnewRow(0);
+		//w.createnewCell(0, "lol");
 		w.writeout();
 		
 		
