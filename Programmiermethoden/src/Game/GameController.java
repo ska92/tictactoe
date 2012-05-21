@@ -30,6 +30,7 @@ public abstract class GameController {
 		Write w = new Write("test1.xls");
 		//w.createnewRow(0);
 		//w.createnewCell(0, "lol");
+		w.createheader();
 		w.writeout();
 		
 		

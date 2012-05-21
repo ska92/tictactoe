@@ -22,20 +22,24 @@ public class Write {
 	private FileOutputStream out;
 	HSSFCellStyle style;
 	
+	
 	public Write (String dataname){
 		try{
 		out = new FileOutputStream(dataname);
 		wb = new HSSFWorkbook();
 		s = wb.createSheet();
-		style = wb.createCellStyle().setFont(wb.createFont());
-		headerrow = s.createRow(0);
-		headercell = headerrow.createCell(0);
-		headercell.setCellValue("Spiel");
-		headerrow.setRowStyle(style);
 	}catch(IOException e){
 		System.out.println("Datei existiert bereits");
 	}
 	}
+	
+	public void createheader(){
+		style = wb.createCellStyle();
+		style.setFillForegroundColor(HSSFColor.BLUE.index);
+		style.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+		headerrow = s.createRow(0);
+		headerrow.setRowStyle(style);
+			}
 	
 	public void createSheet(String sheetname){
 		s = wb.createSheet(sheetname);
