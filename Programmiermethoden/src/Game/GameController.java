@@ -55,6 +55,7 @@ public abstract class GameController {
 		}
 	}
 
+	//Wertet die Parameter der Kommandozeile aus
 	private void parameterAuswerten(String args[]) {
 		Options opts = new Options();
 		opts.addOption(new Option("h", "help", false, "Ausgabe der Hilfe"));
@@ -160,6 +161,7 @@ public abstract class GameController {
 		}
 	}
 	
+	//Gibt Informationen zum Spiel aus
 	private void printInfo(){
 		Formatter fmt = new Formatter();
 		fmt.format("Neues Spiel: %s %n", this.getClass().getSimpleName());
