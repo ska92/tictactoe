@@ -1,0 +1,8 @@
+controller:TicTacToe.TicTacToeController 
+model:TicTacToe.TicTacToeModel 
+spielfeld:TicTacToe.Spielfeld 
+spieler:Game.Spieler.Spieler 
+spieler1:Spieler1 (X) 
+spieler2:Spieler2 (O) 
+regeln:TicTacToe.Regeln 
+viewer:TicTacToe.TicTacToeViewer 
